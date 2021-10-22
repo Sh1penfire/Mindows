@@ -15,8 +15,8 @@ import mindustry.gen.Tex;
 import mindustry.ui.Styles;
 
 public class WindowTable extends Table{
-    Cons<Table> content, onClose;
-    TextureRegionDrawable icon;
+    public Cons<Table> content, onClose;
+    public TextureRegionDrawable icon;
 
     public WindowTable(String title, TextureRegionDrawable icon, Cons<Table> content){
         this(title, icon, content, t -> t.visible(() -> false));
@@ -30,10 +30,19 @@ public class WindowTable extends Table{
         build();
     }
 
-    private void build(){
+    public void build(){
         top();
+        topBar();
 
-        // top bar
+        // window contents
+        table(Styles.black5, t -> {
+            content.get(t);
+        }).grow();
+
+        resizeButton();
+    }
+
+    public void topBar(){
         table(t -> {
             t.table(Tex.buttonEdge1, b -> {
                 b.top().left();
@@ -70,13 +79,9 @@ public class WindowTable extends Table{
             });
         }).top().height(40f).growX();
         row();
+    }
 
-        // window contents
-        table(Styles.black5, t -> {
-            content.get(t);
-        }).grow();
-
-        // resize button
+    public void resizeButton(){
         row();
         table(Styles.black5, t -> {
             t.table().growX();
@@ -99,8 +104,8 @@ public class WindowTable extends Table{
                         float w = v.x - lastX;
                         float h = v.y - lastY;
 
-                        // will softlock if initial size is smaller than minimum.
-                        // So don't do that!
+                        // will softlock if initial size is smaller than minimum
+                        // so don't do that!
                         if(getWidth() + w < 160f) w = 0;
                         if(getHeight() - h  < 160f) h = 0;
                         sizeBy(w, -h);

@@ -1,12 +1,9 @@
 package mindows.ui;
 
-import mindustry.gen.Icon;
+import mindows.ui.windows.SchematicWindow;
 
 public class WindowTables {
     public static WindowTable
 
-    schematics = new WindowTable("Schematics", Icon.copy, t -> {
-        t.top().left();
-        t.labelWrap("PLACEHOLDER").top().left();
-    });
+    schematics = new SchematicWindow();
 }

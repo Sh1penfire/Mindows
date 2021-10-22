@@ -9,6 +9,7 @@ import static mindows.ui.WindowTables.*;
 
 @SuppressWarnings("all")
 public class WindowFragment extends Fragment {
+
     @Override
     public void build(Group parent) {
 
