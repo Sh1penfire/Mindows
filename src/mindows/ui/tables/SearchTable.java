@@ -1,8 +1,10 @@
 package mindows.ui.tables;
 
+import arc.Events;
 import arc.func.*;
 import arc.scene.ui.*;
 import arc.scene.ui.layout.*;
+import mindustry.game.EventType;
 import mindustry.gen.*;
 import mindustry.ui.*;
 
@@ -10,6 +12,12 @@ public class SearchTable extends Table{
     public TextField search;
     public Table all;
     public Cons2<Table, String> rebuild;
+
+    {
+        Events.on(EventType.WorldLoadEvent.class, w -> {
+            this.rebuild();
+        });
+    }
 
     public SearchTable(String messageText, Cons2<Table, String> rebuild){
         super(Styles.black5);
