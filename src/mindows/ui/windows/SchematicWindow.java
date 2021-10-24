@@ -64,7 +64,7 @@ public class SchematicWindow extends WindowTable {
                                 }
                                 if(bannedBlocks){
                                     j.image(Icon.cancelSmall).color(Color.scarlet).padLeft(5f);
-                                    j.labelWrap("[scarlet]Contains banned blocks").padLeft(5f);
+                                    j.labelWrap("[scarlet]Contains Banned Blocks").padLeft(5f);
                                     j.row();
                                 }
                             }).top().left();
