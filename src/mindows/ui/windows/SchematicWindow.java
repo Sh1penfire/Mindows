@@ -3,7 +3,6 @@ package mindows.ui.windows;
 import arc.graphics.Color;
 import arc.struct.OrderedSet;
 import arc.util.*;
-import mindows.ui.*;
 import mindows.ui.tables.*;
 import mindustry.*;
 import mindustry.game.*;

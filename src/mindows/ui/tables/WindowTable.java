@@ -1,4 +1,4 @@
-package mindows.ui;
+package mindows.ui.tables;
 
 import arc.func.Cons;
 import arc.input.KeyCode;

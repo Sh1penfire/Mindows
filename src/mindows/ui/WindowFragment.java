@@ -1,8 +1,7 @@
 package mindows.ui;
 
 import arc.scene.Group;
-import arc.util.Log;
-import mindustry.gen.*;
+import mindows.ui.tables.TaskbarTable;
 import mindustry.ui.fragments.Fragment;
 
 import static mindows.ui.WindowTables.*;
@@ -22,11 +21,9 @@ public class WindowFragment extends Fragment {
             t.add(schematics).size(250f).visible(false);
 
             // sidebar
-            t.table(s -> {
-                s.button(Icon.copy, () -> {
-                    schematics.visible(() -> true);
-                }).disabled(b -> schematics.visible).size(40f);
-            });
+            t.add(new TaskbarTable(
+                schematics
+            )).visible(true);
         });
     };
 }
