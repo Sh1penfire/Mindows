@@ -1,7 +1,7 @@
 package mindows.ui;
 
-import arc.Core;
-import arc.scene.style.Drawable;
+import arc.*;
+import arc.scene.style.*;
 
 public class MindowsTex{
     public static Drawable sidebar;

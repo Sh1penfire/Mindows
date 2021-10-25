@@ -1,18 +1,14 @@
 package mindows.ui.tables;
 
-import arc.func.Cons;
-import arc.input.KeyCode;
-import arc.math.geom.Vec2;
-import arc.scene.event.InputEvent;
-import arc.scene.event.InputListener;
-import arc.scene.event.Touchable;
-import arc.scene.style.TextureRegionDrawable;
-import arc.scene.ui.layout.Table;
-import arc.util.Align;
-import arc.util.Tmp;
-import mindustry.gen.Icon;
-import mindustry.gen.Tex;
-import mindustry.ui.Styles;
+import arc.func.*;
+import arc.input.*;
+import arc.math.geom.*;
+import arc.scene.event.*;
+import arc.scene.style.*;
+import arc.scene.ui.layout.*;
+import arc.util.*;
+import mindustry.gen.*;
+import mindustry.ui.*;
 
 public class WindowTable extends Table{
     public Cons<Table> content, onClose;

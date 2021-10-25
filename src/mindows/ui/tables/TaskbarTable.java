@@ -1,8 +1,8 @@
 package mindows.ui.tables;
 
-import arc.scene.ui.layout.Table;
-import mindows.ui.MindowsTex;
-import mindustry.ui.Styles;
+import arc.scene.ui.layout.*;
+import mindows.ui.*;
+import mindustry.ui.*;
 
 public class TaskbarTable extends Table {
     public TaskbarTable(WindowTable... items){

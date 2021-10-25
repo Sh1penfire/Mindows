@@ -1,8 +1,8 @@
 package mindows.ui;
 
-import arc.scene.Group;
-import mindows.ui.tables.TaskbarTable;
-import mindustry.ui.fragments.Fragment;
+import arc.scene.*;
+import mindows.ui.tables.*;
+import mindustry.ui.fragments.*;
 
 import static mindows.ui.WindowTables.*;
 
