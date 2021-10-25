@@ -21,7 +21,7 @@ public class WindowFragment extends Fragment{
             // sidebar
             t.add(new TaskbarTable(
                 schematics
-            )).visible(true);
+            )).visible(TaskbarTable.visibility);
         });
     };
 }
