@@ -13,7 +13,7 @@ import mindustry.type.ItemStack;
 import mindustry.ui.dialogs.*;
 import mindustry.world.Block;
 
-public class SchematicWindow extends WindowTable {
+public class SchematicWindow extends WindowTable{
     public SchematicWindow(){
         super("schematics", Icon.paste, t -> {});
     }

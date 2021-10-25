@@ -9,7 +9,6 @@ import mindustry.mod.*;
 
 public class Mindows extends Mod{
     public Mindows(){
-
         Events.on(ClientLoadEvent.class, h -> {
             MindowsTex.init();
             new WindowFragment().build(Vars.ui.hudGroup);
@@ -19,5 +18,4 @@ public class Mindows extends Mod{
     @Override
     public void loadContent(){
     }
-
 }

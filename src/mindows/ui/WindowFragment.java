@@ -7,11 +7,9 @@ import mindustry.ui.fragments.Fragment;
 import static mindows.ui.WindowTables.*;
 
 @SuppressWarnings("all")
-public class WindowFragment extends Fragment {
-
+public class WindowFragment extends Fragment{
     @Override
-    public void build(Group parent) {
-
+    public void build(Group parent){
         parent.fill(t -> {
             t.name = "Windows";
             t.visible(() -> parent.visible);
