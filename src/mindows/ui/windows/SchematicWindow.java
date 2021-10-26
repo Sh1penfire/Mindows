@@ -1,21 +1,20 @@
 package mindows.ui.windows;
 
-import arc.graphics.Color;
-import arc.struct.OrderedSet;
+import arc.graphics.*;
+import arc.struct.*;
 import arc.util.*;
 import mindows.ui.tables.*;
 import mindustry.*;
 import mindustry.game.*;
 import mindustry.gen.*;
 import mindustry.graphics.*;
-import mindustry.type.ItemSeq;
-import mindustry.type.ItemStack;
+import mindustry.type.*;
 import mindustry.ui.dialogs.*;
-import mindustry.world.Block;
+import mindustry.world.*;
 
-public class SchematicWindow extends WindowTable {
+public class SchematicWindow extends WindowTable{
     public SchematicWindow(){
-        super("schematics", Icon.copy, t -> {});
+        super("schematics", Icon.paste, t -> {});
     }
 
     @Override

@@ -1,17 +1,15 @@
 package mindows.ui;
 
-import arc.scene.Group;
-import mindows.ui.tables.TaskbarTable;
-import mindustry.ui.fragments.Fragment;
+import arc.scene.*;
+import mindows.ui.tables.*;
+import mindustry.ui.fragments.*;
 
 import static mindows.ui.WindowTables.*;
 
 @SuppressWarnings("all")
-public class WindowFragment extends Fragment {
-
+public class WindowFragment extends Fragment{
     @Override
-    public void build(Group parent) {
-
+    public void build(Group parent){
         parent.fill(t -> {
             t.name = "Windows";
             t.visible(() -> parent.visible);
@@ -23,7 +21,7 @@ public class WindowFragment extends Fragment {
             // sidebar
             t.add(new TaskbarTable(
                 schematics
-            )).visible(true);
+            )).visible(TaskbarTable.visibility);
         });
     };
 }

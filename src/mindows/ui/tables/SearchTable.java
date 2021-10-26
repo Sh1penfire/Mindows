@@ -1,10 +1,10 @@
 package mindows.ui.tables;
 
-import arc.Events;
+import arc.*;
 import arc.func.*;
 import arc.scene.ui.*;
 import arc.scene.ui.layout.*;
-import mindustry.game.EventType;
+import mindustry.game.*;
 import mindustry.gen.*;
 import mindustry.ui.*;
 
