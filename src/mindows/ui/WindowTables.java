@@ -6,5 +6,6 @@ import mindows.ui.windows.*;
 public class WindowTables{
     public static WindowTable
 
-    schematics = new SchematicWindow();
+    schematics = new SchematicWindow(),
+    scan = new ScanWindow();
 }

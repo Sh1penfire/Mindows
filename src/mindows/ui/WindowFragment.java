@@ -17,10 +17,12 @@ public class WindowFragment extends Fragment{
             // windows (totally not a copyright violation)
             t.center().right();
             t.add(schematics).size(250f).visible(false);
+            t.add(scan).size(250f).visible(false);
 
             // sidebar
             t.add(new TaskbarTable(
-                schematics
+                schematics,
+                scan
             )).visible(TaskbarTable.visibility);
         });
     };
