@@ -7,7 +7,7 @@ import mindustry.ui.Styles;
 
 public class ScanWindow extends WindowTable {
     public ScanWindow(){
-        super("scan", Icon.eye, t -> {});
+        super("scan", Icon.eyeSmall, t -> {});
     }
 
     @Override
