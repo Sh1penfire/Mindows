@@ -1,4 +1,4 @@
-package mindows;
+package mindows.scripts;
 
 import arc.files.Fi;
 import mindustry.Vars;
