@@ -4,7 +4,6 @@ import arc.Events;
 import arc.scene.ui.TextField;
 import arc.scene.ui.layout.Table;
 import arc.struct.Seq;
-import arc.util.Align;
 import mindows.scripts.Script;
 import mindows.scripts.ScriptsHandler;
 import mindows.ui.tables.ConsoleTable;
