@@ -7,5 +7,6 @@ public class WindowTables{
     public static WindowTable
 
     schematics = new SchematicWindow(),
-    scan = new ScanWindow();
+    scan = new ScanWindow(),
+    script = new ScriptWindow();
 }

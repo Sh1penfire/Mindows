@@ -18,11 +18,13 @@ public class WindowFragment extends Fragment{
             t.center().right();
             t.add(schematics).size(250f).visible(false);
             t.add(scan).size(250f).visible(false);
+            t.add(script).size(250f).visible(false);
 
             // sidebar
             t.add(new TaskbarTable(
                 schematics,
-                scan
+                scan,
+                script
             )).visible(TaskbarTable.visibility);
         });
     };
