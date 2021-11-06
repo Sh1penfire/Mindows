@@ -8,7 +8,7 @@ main: "mindows.Mindows"
 
 version: 1.0
 
-minGameVersion: 133
+minGameVersion: 134.1
 
 java: true
 
