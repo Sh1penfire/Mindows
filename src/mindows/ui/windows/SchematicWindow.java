@@ -14,7 +14,7 @@ import mindustry.world.*;
 
 public class SchematicWindow extends WindowTable{
     public SchematicWindow(){
-        super("schematics", Icon.paste, t -> {});
+        super("Schematics", Icon.paste, t -> {});
     }
 
     @Override

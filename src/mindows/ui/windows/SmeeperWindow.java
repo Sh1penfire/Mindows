@@ -13,7 +13,7 @@ public class SmeeperWindow extends WindowTable {
     public int gameW = 10, gameH = 10;
 
     public SmeeperWindow(){
-        super("Winesmeeper", Icon.hammer, t -> {});
+        super("WineSmeeper", Icon.hammer, t -> {});
     }
 
     @Override

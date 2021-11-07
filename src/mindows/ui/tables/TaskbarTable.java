@@ -18,7 +18,8 @@ public class TaskbarTable extends Table{
                     w.visible(visibility);
                 }).disabled(b -> w.visible)
                     .size(40f)
-                    .padLeft(5f);
+                    .padLeft(5f)
+                    .tooltip(w.name);
                 t.row();
             }
         }).right().center().width(40f);

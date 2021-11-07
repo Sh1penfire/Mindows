@@ -25,7 +25,7 @@ public class ScriptWindow extends WindowTable {
     public String command = "";
 
     public ScriptWindow(){
-        super("scripts", Icon.terminal, t -> {});
+        super("Script Console", Icon.terminal, t -> {});
     }
 
     {
