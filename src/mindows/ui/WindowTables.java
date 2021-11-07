@@ -8,5 +8,6 @@ public class WindowTables{
 
     schematics = new SchematicWindow(),
     scan = new ScanWindow(),
-    script = new ScriptWindow();
+    script = new ScriptWindow(),
+    smeeper = new SmeeperWindow();
 }
