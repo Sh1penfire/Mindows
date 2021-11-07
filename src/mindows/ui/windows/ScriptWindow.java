@@ -49,6 +49,7 @@ public class ScriptWindow extends WindowTable {
         top();
         topBar();
 
+        console = new ConsoleTable(messages);
         table(Styles.black5, tab -> {
             tab.table(t -> {
                 t.top().left();
