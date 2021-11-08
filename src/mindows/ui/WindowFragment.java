@@ -20,12 +20,14 @@ public class WindowFragment extends Fragment{
             t.add(scan).size(250f).visible(false);
             t.add(script).size(250f).visible(false);
             t.add(smeeper).size(250f).visible(false);
+            t.add(cheat).size(250f).visible(false);
 
             // sidebar
             t.add(new TaskbarTable(
                 schematics,
                 scan,
                 script,
+                cheat,
                 smeeper
             )).visible(TaskbarTable.visibility);
         });

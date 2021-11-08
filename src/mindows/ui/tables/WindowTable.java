@@ -13,6 +13,8 @@ import mindustry.ui.*;
 public class WindowTable extends Table{
     public Cons<Table> content, onClose;
     public TextureRegionDrawable icon;
+    public float maxWindowHeight, maxWindowWidth;
+    public boolean maxWidthEnabled = false, maxHeightEnabled = false;
 
     public WindowTable(String title, TextureRegionDrawable icon, Cons<Table> content){
         this(title, icon, content, t -> t.visible(() -> false));
@@ -102,8 +104,8 @@ public class WindowTable extends Table{
 
                         // will softlock if initial size is smaller than minimum
                         // so don't do that!
-                        if(getWidth() + w < 160f) w = 0;
-                        if(getHeight() - h  < 160f) h = 0;
+                        if(getWidth() + w < 160f || (getWidth() + w > maxWindowWidth && maxWidthEnabled)) w = 0;
+                        if(getHeight() - h  < 160f || (getHeight() - h > maxWindowHeight && maxHeightEnabled)) h = 0;
                         sizeBy(w, -h);
                         moveBy(0, h);
                         lastX = v.x;
@@ -112,5 +114,15 @@ public class WindowTable extends Table{
                 });
             }).size(20f).left();
         }).height(20f).growX();
+    }
+
+    public void setMaxWindowWidth(float maxWindowWidth){
+        this.maxWindowWidth = maxWindowWidth;
+        maxWidthEnabled = true;
+    }
+
+    public void setMaxWindowHeight(float maxWindowHeight){
+        this.maxWindowHeight = maxWindowHeight;
+        maxHeightEnabled = true;
     }
 }

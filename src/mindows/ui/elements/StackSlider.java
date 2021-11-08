@@ -5,12 +5,14 @@ import arc.math.Mathf;
 import arc.scene.event.Touchable;
 import arc.scene.ui.*;
 import arc.scene.ui.layout.*;
+import arc.util.Strings;
 import mindustry.ui.*;
 
 public class StackSlider extends Table {
+    public Slider slider;
     public StackSlider(float min, float max, float step, float def, Floatc listener){
         super();
-        Slider slider = new Slider(min, max, step, false);
+        slider = new Slider(min, max, step, false);
         slider.setValue(def);
 
         Label value = new Label(number(def), Styles.outlineLabel);
@@ -29,11 +31,16 @@ public class StackSlider extends Table {
         stack(slider, contents).top().left().growX();
     }
 
+    public void setValue(float value){
+        slider.setValue(value);
+    }
+
+    // fix floating point errors and remove decimals when unnecessary
     private String number(float number){
         if(number % 1 == 0){
             return String.valueOf(Mathf.floor(number));
         }else{
-            return String.valueOf(number);
+            return Strings.autoFixed(number, 7);
         }
     }
 }
